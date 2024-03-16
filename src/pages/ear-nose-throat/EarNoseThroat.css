@@ -1,0 +1,33 @@
+.ear-nose-throat-content > section:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ear-nose-throat-images {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ear-nose-throat-images img {
+  width: 305px;
+  height: 279px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .ear-nose-throat-content > section:nth-of-type(2) {
+    flex-direction: column;
+  }
+
+  .ear-nose-throat-images {
+    width: 100%;
+  }
+
+  .ear-nose-throat-images img {
+    width: 100%;
+    margin: 20px 0;
+  }
+}

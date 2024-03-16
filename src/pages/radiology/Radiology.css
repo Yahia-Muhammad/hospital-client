@@ -1,0 +1,41 @@
+.radiology-content > section:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.radiology-content > section:last-of-type > div:last-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radiology-content > section:last-of-type > div:last-of-type img {
+  width: 305px;
+  height: 220px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .radiology-content > section:last-of-type {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .radiology-content > section:last-of-type > div:first-of-type {
+    width: 100%;
+  }
+
+  .radiology-content > section:last-of-type > div:last-of-type {
+    width: 100%;
+  }
+
+  .radiology-content > section:last-of-type > div:last-of-type img {
+    width: 100%;
+    margin: 20px 0;
+  }
+}

@@ -1,0 +1,54 @@
+.create-account-content {
+  width: var(--mainWidth);
+  margin: var(--mainMargin);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.create-account-content > form {
+  width: 60%;
+}
+.create-account-content > form input,
+.create-account-content > form select,
+.create-account-content > form span,
+.create-account-content > form > button {
+  width: 100%;
+  height: 48px;
+  border-radius: 4px;
+  padding: 0 25px;
+  margin-bottom: 22px;
+}
+.create-account-content > form input[type="checkbox"] {
+  all: revert;
+}
+.create-account-content > form button {
+  background: linear-gradient(92.51deg, #ffffff -21.24%, #efa63f 49.76%);
+  border: none;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.create-account-content > form span {
+  padding: 0 0;
+}
+.create-account-content > section {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+.create-account-content > section img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .create-account-content {
+    flex-direction: column;
+  }
+  .create-account-content > form {
+    width: 100%;
+  }
+  .create-account-content > section {
+    width: 100%;
+    margin-top: 30px;
+  }
+}

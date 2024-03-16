@@ -1,0 +1,38 @@
+.general-surgery-content > section:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.general-surgery-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.general-surgery-images img {
+  width: 305px;
+  height: 279px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .general-surgery-content > section:last-of-type {
+    display: flex;
+    flex-direction: column;
+  }
+  .general-surgery-text {
+    width: 100%;
+  }
+
+  .general-surgery-images {
+    width: 100%;
+  }
+
+  .general-surgery-images img {
+    width: 100%;
+    margin: 20px 0;
+  }
+}

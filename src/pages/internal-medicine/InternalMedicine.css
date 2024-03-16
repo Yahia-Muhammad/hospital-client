@@ -1,0 +1,49 @@
+.internal-medicine-content > section:nth-of-type(2) > div:first-of-type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.internal-medicine-content
+  > section:nth-of-type(2)
+  > div:first-of-type
+  section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.internal-medicine-content
+  > section:nth-of-type(2)
+  > div:first-of-type
+  section
+  img {
+  width: 305px;
+  height: 279px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .internal-medicine-content > section:nth-of-type(2) > div:first-of-type {
+    flex-direction: column;
+  }
+
+  .internal-medicine-content
+    > section:nth-of-type(2)
+    > div:first-of-type
+    section {
+    width: 100%;
+  }
+
+  .internal-medicine-content
+    > section:nth-of-type(2)
+    > div:first-of-type
+    section
+    img {
+    width: 100%;
+    margin: 20px 0;
+  }
+}

@@ -1,0 +1,26 @@
+.patients {
+  width: 100%;
+  position: relative;
+}
+
+.patients-content img {
+  width: 100%;
+}
+
+.patients-content {
+  width: var(--smallWidth);
+  margin: var(--mainMargin);
+}
+
+.patients-content h1 {
+  text-align: left;
+}
+
+.patients-content ul {
+  list-style: disc;
+  position: relative;
+}
+
+.patients-content ul li {
+  margin-bottom: 15px;
+}

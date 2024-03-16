@@ -1,0 +1,25 @@
+.ambulance-content > section:first-child div p {
+  margin-bottom: 5px;
+}
+
+.ambulance-content > section:last-child {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ambulance-content > section:last-child img {
+  width: 410px;
+  height: 279px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .ambulance-content > section:last-child img {
+    width: 100%;
+    margin: 20px 0;
+  }
+}

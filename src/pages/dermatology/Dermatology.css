@@ -1,0 +1,36 @@
+.dermatology-content > section:nth-of-type(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dermatology-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dermatology-images img {
+  width: 305px;
+  height: 279px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .dermatology-content > section:nth-of-type(2) > div {
+    width: 100%;
+  }
+
+  .dermatology-content > section:nth-of-type(2) {
+    flex-direction: column;
+  }
+
+  .dermatology-images img {
+    width: 100%;
+    margin: 20px 0;
+  }
+}

@@ -1,0 +1,22 @@
+.breast-clinic-content section:last-of-type {
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.breast-clinic-content section img {
+  width: 305px;
+  height: 279px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .breast-clinic-content section img {
+    width: 100%;
+  }
+}

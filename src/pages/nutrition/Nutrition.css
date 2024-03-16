@@ -1,0 +1,45 @@
+.nutrition-content > section:first-of-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nutrition-content > section:first-of-type div:first-child {
+  width: 65%;
+}
+
+.nutrition-content > section:first-of-type div:last-child {
+  width: 32%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nutrition-content > section:first-of-type div:last-child img {
+  width: 196px;
+  height: 200px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .nutrition-content > section:first-of-type {
+    flex-direction: column;
+  }
+
+  .nutrition-content > section:first-of-type div:first-child {
+    width: 100%;
+  }
+
+  .nutrition-content > section:first-of-type div:last-child {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nutrition-content > section:first-of-type div:last-child img {
+    width: 100%;
+    margin: 20px 0;
+  }
+}

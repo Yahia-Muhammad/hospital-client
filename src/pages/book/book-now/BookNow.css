@@ -1,0 +1,145 @@
+/**************************************************/
+/****************** Choose Doctor **********************/
+/**************************************************/
+.book-now {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.section-doctor {
+  width: 54%;
+}
+
+.section-form {
+  width: 43%;
+}
+
+.section-doctor > div:first-of-type {
+  background: var(--mainColor);
+  color: #fff;
+  padding: 10px 30px;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+
+.attend-span {
+  display: block;
+}
+
+.section-doctor > div:last-of-type {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 15px;
+  padding: 45px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0px 0px 2px #9b9b9b, 0px 0px 0px #ffffff;
+}
+
+.section-doctor div img {
+  width: 30%;
+}
+
+.section-doctor div section {
+  margin-left: 30px;
+}
+
+.section-form > div:first-of-type {
+  background: var(--mainColor);
+  color: #fff;
+  padding: 10px 30px;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+
+.section-form form {
+  margin-top: 15px;
+  padding: 45px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0px 0px 2px #9b9b9b, 0px 0px 0px #ffffff;
+}
+
+.section-form form label {
+  font-size: 22px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.section-form form input,
+.section-form form select,
+.section-form form button {
+  width: 100%;
+  height: 45px;
+  padding: 0 25px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.section-form form button {
+  border: none;
+  background: linear-gradient(108.36deg, #ffffff -46.18%, #efa63f 58.99%);
+}
+
+/**************************************************/
+/****************** r-number **********************/
+/**************************************************/
+
+.r-number {
+  font-size: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.r-number span:last-of-type {
+  background: var(--mainColor);
+  color: #fff;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/**************************************************/
+/****************** Media Query **********************/
+/**************************************************/
+
+@media (max-width: 768px) {
+  .book-now {
+    flex-direction: column;
+  }
+
+  .section-doctor {
+    width: 100%;
+  }
+
+  .attend-span {
+    margin-left: 0px;
+    display: block;
+  }
+
+  .section-doctor > div:last-of-type {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section-doctor div section {
+    margin-left: 0px;
+  }
+
+  .section-doctor div img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .section-form {
+    width: 100%;
+  }
+}

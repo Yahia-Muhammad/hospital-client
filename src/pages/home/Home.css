@@ -1,0 +1,108 @@
+/**************************************************/
+/****************** Our And Information **********************/
+/**************************************************/
+
+.information-container {
+  position: relative;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+.our,
+.information {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.our-text,
+.information-text {
+  width: 42%;
+}
+
+.our-text div {
+  margin: 32px 0;
+}
+
+.our-text div img {
+  transform: translate(0px, 10px);
+}
+
+.our-text p,
+.information-text p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #1f1f1f;
+  margin-top: 12px;
+}
+
+.information-text p {
+  font-size: 14px;
+}
+
+.our-img,
+.information-img {
+  width: 50%;
+}
+
+.our-img img,
+.information-img img {
+  width: 100%;
+}
+
+/**************************************************/
+/******************Our Infection**********************/
+/**************************************************/
+
+.our-infection h4 {
+  color: var(--mainColor);
+}
+
+.our-infection ul {
+  list-style: auto;
+  list-style-position: inside;
+  margin-top: 22px;
+}
+
+.our-infection ul li {
+  margin: 10px 0;
+}
+
+/**************************************************/
+/****************** Bubbles Img **********************/
+/**************************************************/
+
+.information-container .bubbles-img {
+  top: -85px;
+}
+
+.our-infection .bubbles-img {
+  right: 0;
+}
+
+/**************************************************/
+/******************Media Query**********************/
+/**************************************************/
+
+@media (max-width: 768px) {
+  .our,
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .our-text,
+  .information-text {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .our-img,
+  .information-img {
+    width: 100%;
+  }
+}
