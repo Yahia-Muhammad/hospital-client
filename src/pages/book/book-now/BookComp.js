@@ -73,7 +73,7 @@ const BookNow = () => {
         formDataBook.append("email", email);
         formDataBook.append("attend", attend);
         formDataBook.append("bookingDate", new Date().toLocaleString());
-        formDataBook.append("check", "Not Done");
+        formDataBook.append("check", "Waiting");
         formDataBook.append("price", doctor.price);
         formDataBook.append("specialization", doctor.specialization);
         formDataBook.append("doctor", doctor.name);
@@ -93,7 +93,7 @@ const BookNow = () => {
         const formDataVisit = new FormData();
         formDataVisit.append("attend", attend);
         formDataVisit.append("bookingDate", new Date().toLocaleString());
-        formDataVisit.append("check", "Not Done");
+        formDataVisit.append("check", "Waiting");
         formDataVisit.append("price", doctor.price);
         formDataVisit.append("specialization", doctor.specialization);
         formDataVisit.append("doctor", doctor.name);
@@ -131,8 +131,8 @@ const BookNow = () => {
                 const filterBook = getRes.data.data.books.filter((el) =>
                     el.specialization === doctor.specialization &&
                     el.doctor === doctor.name &&
-                    el.attend === attend
-                    // el.check === "Not Done"
+                    el.attend === attend &&
+                    el.check === "Wait"
                 );
                 setRNumber(filterBook.length + 1);
                 handleFormDataBook(visitId, filterBook.length + 1)
