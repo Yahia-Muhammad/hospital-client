@@ -22,10 +22,9 @@ const ChosseDoctor = ({ dataDoctors, route }) => {
                                 <h2>{el.name}</h2>
                                 <p>{el.specialization}</p>
                                 {el.attend.map((ell, indd) => {
-                                    var jsonObj = JSON.parse(ell);
 
                                     return (
-                                        <p key={indd}>{jsonObj.day} {jsonObj.hour.start} To {jsonObj.hour.end}</p>
+                                        <p key={indd}>{ell.day} {ell.hour.start} To {ell.hour.end}</p>
                                     )
                                 })}
 

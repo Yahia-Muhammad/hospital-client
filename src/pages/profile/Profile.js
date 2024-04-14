@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import './Profile.css';
 import Header from "../../comp/header/Header";
 import Footer from "../../comp/footer/Footer";
@@ -6,7 +6,7 @@ import signInBg from "../../images/signBg.png";
 import Axios from "axios";
 import { useCookies } from 'react-cookie';
 import { useNavigate } from "react-router-dom";
-
+import themeContext from "../../config/Theme";
 
 
 const Profile = () => {
@@ -14,6 +14,8 @@ const Profile = () => {
     const [cookies, setCookies] = useCookies("access_token");
     const idUser = localStorage.getItem("access_id");
     const navigate = useNavigate();
+    const { theme } = useContext(themeContext);
+
 
     // data user
     const [name, setName] = useState("");
@@ -62,7 +64,7 @@ const Profile = () => {
     return (
         <>
             <Header />
-            <div className="main profile">
+            <div className={`main profile ${theme}`}>
                 <img className="main-bg" src={signInBg} alt="Profile" />
                 <p className="p-sign">
                     <span>Your</span>
@@ -125,7 +127,6 @@ const Profile = () => {
                     </form>
                     <section>
                         {visitis.map((el, ind) => {
-                            var jsonObj = JSON.parse(el.attend);
 
                             return (
                                 <div className={`visitis`} key={ind}>
@@ -137,7 +138,7 @@ const Profile = () => {
                                         <div><span>Specialization : </span><span>{el.specialization}</span></div>
                                         <div><span>Doctor : </span><span>{el.doctor}</span></div>
                                         <div><span>Booking Date : </span><span>{el.bookingDate}</span></div>
-                                        <div><span>Attend : </span><span>{jsonObj.day} {jsonObj.hour.start} To {jsonObj.hour.end}</span></div>
+                                        <div><span>Attend : </span><span>{el.attend.day} {el.attend.hour.start} To {el.attend.hour.end}</span></div>
                                         <div><span>Check : </span><span>{el.check}</span></div>
                                         <div><span>Detection price : </span><span>{el.price}</span></div>
                                         <div className='width100'><span>Diagnosis : </span><span>{el.diagnosis}</span></div>

@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Nutrition.css";
 import Header from "../../comp/header/Header";
 import Footer from "../../comp/footer/Footer";
 import nutritionBg from "../../images/nutritionBg.png";
 import nutritionOne from "../../images/nutritionOne.png";
 import nutritionTwo from "../../images/nutritionTwo.png";
+import themeContext from "../../config/Theme";
+
 
 const Nutrition = () => {
+  const { theme } = useContext(themeContext);
+
   return (
     <>
       <Header />
-      <div className="main nutrition">
+      <div className={`main nutrition ${theme}`}>
         <img className="main-bg" src={nutritionBg} alt="Nutrition" />
 
         <h1>Nutrition</h1>

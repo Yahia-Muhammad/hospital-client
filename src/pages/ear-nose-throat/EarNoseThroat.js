@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./EarNoseThroat.css";
 import Header from "../../comp/header/Header";
 import Footer from "../../comp/footer/Footer";
 import earNoseThroatBg from "../../images/earNoseThroatBg.png";
 import earNoseThroatOne from "../../images/earNoseThroatOne.png";
 import earNoseThroatTwo from "../../images/earNoseThroatTwo.png";
+import themeContext from "../../config/Theme";
+
 
 const EarNoseThroat = () => {
+  const { theme } = useContext(themeContext);
+
   return (
     <>
       <Header />
-      <div className="main ear-nose-throat">
+      <div className={`main ear-nose-throat ${theme}`}>
         <img className="main-bg" src={earNoseThroatBg} alt="Ear Nose Throat" />
 
         <h1>Ear, Nose and Throat conditions</h1>

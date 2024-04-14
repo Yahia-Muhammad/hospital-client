@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import "./CreateAccount.css";
 import FormAuth from './FormAuth';
 import Header from "../../comp/header/Header";
@@ -9,10 +9,14 @@ import createAccountTwo from "../../images/createAccountTwo.png";
 import BubblesSvg from "../../comp/svg/BubblesSvg.svg";
 import { useNavigate } from "react-router-dom";
 import { useCookies } from 'react-cookie';
+import themeContext from "../../config/Theme";
+
 
 const CreateAccount = () => {
   const [cookies, setCookies] = useCookies("access_token");
   const navigate = useNavigate();
+  const { theme } = useContext(themeContext);
+
 
   useEffect(() => {
     if (cookies.access_token) {
@@ -24,7 +28,7 @@ const CreateAccount = () => {
   return (
     <>
       <Header />
-      <div className="main create-account">
+      <div className={`main create-account ${theme}`}>
         <img className="main-bg" src={createAccountBg} alt="Create Account" />
 
         <p className="p-sign">

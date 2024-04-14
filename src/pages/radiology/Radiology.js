@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Radiology.css";
 import Header from "../../comp/header/Header";
 import Footer from "../../comp/footer/Footer";
 import radiologyBg from "../../images/radiologyBg.png";
 import radiologyOne from "../../images/radiologyOne.png";
 import radiologyTwo from "../../images/radiologyTwo.png";
+import themeContext from "../../config/Theme";
+
 
 const Radiology = () => {
+  const { theme } = useContext(themeContext);
+
   return (
     <>
       <Header />
-      <div className="main radiology">
+      <div className={`main radiology ${theme}`}>
         <img className="main-bg" src={radiologyBg} alt="Radiology" />
 
         <h1>Radiology</h1>

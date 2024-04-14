@@ -1,0 +1,237 @@
+/* Dark Mode */
+.dark {
+  background-color: #1b1b1b;
+  color: #ffffff;
+}
+
+/* Light Mode */
+.light {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Heading Styles */
+h2.tLogo,
+.basic-ul,
+h3,
+.our-infection h4 {
+  color: var(--mainColor); /* Using custom variable */
+}
+
+/* Specific Section Styling */
+.section-doctor > div:first-of-type,
+.section-form > div:first-of-type,
+.r-number span:last-of-type,
+.header-filter,
+.visitis > section:first-of-type,
+.booking {
+  background-color: var(--mainColor); /* Using custom variable */
+}
+
+/* Main Background */
+.light .main-bg {
+}
+
+.dark .main-bg {
+  filter: brightness(0.5);
+}
+
+/* Header Styling */
+header.light {
+  background-color: #efefefcc;
+}
+
+header.dark {
+  background-color: #1b1b1bcc;
+}
+
+header.pc .between-li::before,
+header.pc .between-li::after,
+header.mobile .between-li::before,
+header.mobile .between-li::after {
+  background-color: #6d9e9a;
+}
+
+/* Footer Styling */
+footer.light {
+  background-color: #efefef;
+}
+
+footer.dark {
+  background-color: #000;
+}
+
+/* Home Styling */
+.light .our-text p,
+.light .information-text p {
+  color: #1f1f1f;
+}
+
+.dark .our-text p,
+.dark .information-text p {
+  color: #fff;
+}
+
+.light .information-container {
+  background-color: #f9f9f9;
+}
+
+.dark .information-container {
+  background-color: #1f1f1f;
+}
+
+/* Slide Styling */
+
+.light .slide {
+  border: 1px solid #c2c2c2;
+}
+
+.dark .slide {
+  border: 1px solid #000000;
+}
+
+/* Booking Header Styling */
+.light .booking select,
+.light .booking img {
+  color: #f3f3f3;
+}
+
+.dark .booking select,
+.dark .booking img {
+  color: #f3f3f3;
+}
+
+.booking select option {
+  color: #717171;
+}
+
+/* Authentication Button Styling */
+.light .auth-home button.create-account-btn {
+  color: #1f1f1f;
+}
+
+.dark .auth-home button.create-account-btn {
+  color: #fff;
+}
+
+.light .auth-home button.sign-in-btn {
+  color: #fff;
+}
+
+.dark .auth-home button.sign-in-btn {
+  color: #fff;
+}
+
+/* Sign-in Input Styling */
+.sign-in.light > section input {
+  color: #000;
+  border: 2px solid #c8c8c8;
+  background-color: #fbfbfb;
+}
+
+.sign-in.dark > section input {
+  color: #fff;
+  border: 2px solid #a5a5a5;
+  background-color: #444444;
+}
+
+/* Sign Buttons Styling */
+.light .sign-buttons button:first-child {
+  color: #000;
+}
+
+.dark .sign-buttons button:first-child {
+  color: #fff;
+}
+
+.sign-buttons button:last-child {
+  color: #f22e2e;
+}
+
+/* Create Account Form Styling */
+.light .create-account-content > form input,
+.light .create-account-content > form select {
+  color: #000;
+  border: 2px solid #c8c8c8;
+  background-color: #fbfbfb;
+}
+
+.dark .create-account-content > form input,
+.dark .create-account-content > form select {
+  color: #fff;
+  border: 2px solid #a5a5a5;
+  background-color: #444444;
+}
+
+/* Additional Styling for Select and Date Input */
+.create-account-content > form select,
+.create-account-content > form input[type="date"] {
+  color: #787878 !important;
+}
+
+/* Header Styling for Light and Dark Modes */
+header.pc.light .ul-coe,
+header.pc.light .ul-pa {
+  background-color: #fff;
+}
+
+header.pc.dark .ul-coe,
+header.pc.dark .ul-pa {
+  background-color: #1b1b1b;
+}
+
+/* Logo Heading Styling */
+h1.tLogo {
+  color: var(--mainColor) !important; /* Using custom variable */
+}
+
+/* Filter and Document Styling */
+.light .filters {
+  border: 2px solid #eaeaea;
+}
+
+.dark .filters {
+  border: 2px solid #000;
+}
+
+.light .doc {
+  border: 2px solid #eaeaea;
+}
+
+.dark .doc {
+  border: 2px solid #000;
+}
+
+/* Form Input Styling */
+.light .section-form form input {
+  color: #000;
+  border: 2px solid #c8c8c8;
+  background-color: #fbfbfb;
+}
+
+.dark .section-form form input {
+  color: #fff;
+  border: 2px solid #a5a5a5;
+  background-color: #444444;
+}
+
+/* Form Select and Date Input Styling */
+.light .section-form form select,
+.light .section-form form input[type="date"] {
+  background-color: #fbfbfb;
+  color: #818181;
+  border: 2px solid #c8c8c8;
+}
+
+.dark .section-form form select,
+.dark .section-form form input[type="date"] {
+  background-color: #444444;
+  color: #818181;
+  border: 2px solid #a5a5a5;
+}
+
+/* Specific Section Styling */
+.section-doctor > div:first-of-type,
+.section-form > div:first-of-type {
+  color: #fff;
+}

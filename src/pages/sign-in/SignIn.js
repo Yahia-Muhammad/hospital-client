@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import "./SignIn.css";
 import FormAuth from './FormAuth';
 import Header from "../../comp/header/Header";
@@ -7,11 +7,15 @@ import signInBg from "../../images/signBg.png";
 import BubblesSvg from "../../comp/svg/BubblesSvg.svg";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useCookies } from 'react-cookie';
+import themeContext from "../../config/Theme";
+
 
 
 const SignIn = () => {
   const [cookies, setCookies] = useCookies("access_token");
   const navigate = useNavigate();
+  const { theme } = useContext(themeContext);
+
 
   useEffect(() => {
     if (cookies.access_token) {
@@ -22,7 +26,7 @@ const SignIn = () => {
   return (
     <>
       <Header />
-      <div className="main sign-in">
+      <div className={`main sign-in ${theme}`}>
         <img className="main-bg" src={signInBg} alt="Sign In" />
         <p className="p-sign">
           <span>Sign In</span>

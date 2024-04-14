@@ -64,7 +64,6 @@ h3 {
   font-size: 20px;
   line-height: 19px;
   margin-left: 10px;
-  color: var(--mainColor);
   border-bottom: 1px solid var(--mainColor);
   display: inline-block;
 }
@@ -105,6 +104,7 @@ button,
 
 .main {
   width: 100%;
+  padding-bottom: 100px;
   overflow: hidden;
   position: relative;
 }
@@ -134,13 +134,11 @@ button,
   font-size: 25px;
   font-weight: 500;
   line-height: 19px;
-  color: #000;
 }
 .p-sign span:last-child {
   font-size: 45px;
   font-weight: 700;
   line-height: 29px;
-  color: #e7e7e7;
 }
 
 .sign-buttons {
@@ -158,13 +156,13 @@ button,
   background: transparent;
   border: none;
 }
+
 .sign-buttons button:last-child {
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
   background: transparent;
   border: none;
-  color: #f22e2e;
 }
 
 /* =========== Utils =========== */

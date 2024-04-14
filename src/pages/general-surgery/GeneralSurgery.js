@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./GeneralSurgery.css";
 import Header from "../../comp/header/Header";
 import Footer from "../../comp/footer/Footer";
 import generalSurgeryBg from "../../images/generalSurgeryBg.png";
 import generalSurgeryOne from "../../images/generalSurgeryOne.png";
 import generalSurgeryTwo from "../../images/generalSurgeryTwo.png";
+import themeContext from "../../config/Theme";
+
 
 const GeneralSurgery = () => {
+  const { theme } = useContext(themeContext);
+
   return (
     <>
       <Header />
-      <div className="main general-surgery">
+      <div className={`main general-surgery ${theme}`}>
         <img className="main-bg" src={generalSurgeryBg} alt="General surgery" />
 
         <h1>General Surgery</h1>

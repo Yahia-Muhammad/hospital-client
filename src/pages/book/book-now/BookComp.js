@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
 import Axios from "axios";
 import { useCookies } from 'react-cookie';
+import DaySelector from './DaySelector';
 
 
 const BookNow = () => {
@@ -53,6 +54,8 @@ const BookNow = () => {
 
     const createBook = (e) => {
         e.preventDefault();
+
+        // console.log(attend);
 
         if (cookies.access_token) {
             handleFormDataVisit()
@@ -147,9 +150,8 @@ const BookNow = () => {
             <section className='section-doctor'>
                 <div>
                     {doctor.attend?.map((el, ind) => {
-                        var jsonObj = JSON.parse(el);
                         return (
-                            <span key={ind} className='attend-span'>{jsonObj.day} {jsonObj.hour.start} To {jsonObj.hour.end}</span>
+                            <span key={ind} className='attend-span'>{el.day} {el.hour.start} To {el.hour.end}</span>
                         )
                     })}
                 </div>
@@ -186,15 +188,7 @@ const BookNow = () => {
                     <input type="date" onChange={(e) => { setDate(e.target.value) }} value={date} />
                     <input type='text' placeholder='Phone' onChange={(e) => { setPhone(e.target.value) }} value={phone} />
                     <input type='text' placeholder='Email' onChange={(e) => { setEmail(e.target.value) }} value={email} />
-                    <select value={attend} onChange={(e) => { setAttend(e.target.value) }}>
-                        <option>Attend</option>
-                        {doctor.attend?.map((el, ind) => {
-                            var jsonObj = JSON.parse(el);
-                            return (
-                                <option key={ind} value={el}>{jsonObj.day} {jsonObj.hour.start} To {jsonObj.hour.end}</option>
-                            )
-                        })}
-                    </select>
+                    <DaySelector daysOfWeek={doctor.attend} attend={attend} setAttend={setAttend} />
                     <button onClick={createBook}>Book Now</button>
                 </form>
             </section>

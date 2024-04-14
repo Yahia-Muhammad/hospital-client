@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Dermatology.css";
 import Header from "../../comp/header/Header";
 import Footer from "../../comp/footer/Footer";
 import dermatologyBg from "../../images/dermatologyBg.png";
 import dermatologyOne from "../../images/dermatologyOne.png";
 import dermatologyTwo from "../../images/dermatologyTwo.png";
+import themeContext from "../../config/Theme";
+
 
 const Dermatology = () => {
+  const { theme } = useContext(themeContext);
+
   return (
     <>
       <Header />
-      <div className="main dermatology">
+      <div className={`main dermatology ${theme}`}>
         <img className="main-bg" src={dermatologyBg} alt="Dermatology" />
 
         <h1>Dermatology</h1>

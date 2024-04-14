@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Patients.css";
 import Header from "../../comp/header/Header";
 import Footer from "../../comp/footer/Footer";
@@ -6,12 +6,15 @@ import patientsRes from "../../images/patientsRes.png";
 import patientsImgCont from "../../images/patientsImgCont.png";
 import behindAbout from "../../images/behindAbout.png";
 import BubblesSvg from "../../comp/svg/BubblesSvg.svg";
+import themeContext from "../../config/Theme";
 
 const PatientsRes = () => {
+  const { theme } = useContext(themeContext);
+
   return (
     <>
       <Header />
-      <div className="main patients">
+      <div className={`main patients ${theme}`}>
         <img
           className="main-bg"
           src={patientsRes}

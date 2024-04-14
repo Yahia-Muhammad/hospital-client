@@ -20,12 +20,10 @@
 .header-filter {
   display: flex;
   justify-content: space-between;
-  background-color: var(--mainColor);
   padding: 10px 30px;
 }
 
 .header-filter h2 {
-  color: #fff;
 }
 
 .header-filter h2.btn-show-filter {

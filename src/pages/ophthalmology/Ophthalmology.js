@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Ophthalmology.css";
 import Header from "../../comp/header/Header";
 import Footer from "../../comp/footer/Footer";
 import ophthalmologyBg from "../../images/ophthalmologyBg.png";
 import ophthalmologyOne from "../../images/ophthalmologyOne.png";
 import ophthalmologyTwo from "../../images/ophthalmologyTwo.png";
+import themeContext from "../../config/Theme";
+
 
 const Ophthalmology = () => {
+  const { theme } = useContext(themeContext);
+
   return (
     <>
       <Header />
-      <div className="main ophthalmology">
+      <div className={`main ophthalmology ${theme}`}>
         <img className="main-bg" src={ophthalmologyBg} alt="Ophthalmology" />
 
         <h1>Ophthalmology</h1>

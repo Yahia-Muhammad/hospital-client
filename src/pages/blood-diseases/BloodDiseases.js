@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./BloodDiseases.css";
 import Header from "../../comp/header/Header";
 import Footer from "../../comp/footer/Footer";
 import BloodDiseasesBg from "../../images/BloodDiseasesBg.png";
 import BloodDiseasesOne from "../../images/BloodDiseasesOne.png";
 import BloodDiseasesTwo from "../../images/BloodDiseasesTwo.png";
+import themeContext from "../../config/Theme";
+
 
 const BloodDiseases = () => {
+  const { theme } = useContext(themeContext);
+
   return (
     <>
       <Header />
-      <div className="main blood-diseases">
+      <div className={`main blood-diseases ${theme}`}>
         <img className="main-bg" src={BloodDiseasesBg} alt="Blood diseases" />
 
         <h1>Blood Diseases</h1>

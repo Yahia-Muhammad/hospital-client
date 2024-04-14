@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./ObGyn.css";
 import Header from "../../comp/header/Header";
 import Footer from "../../comp/footer/Footer";
 import obGynBg from "../../images/obGynBg.png";
 import obGynOne from "../../images/obGynOne.png";
 import obGynTwo from "../../images/obGynTwo.png";
+import themeContext from "../../config/Theme";
+
 
 const ObGyn = () => {
+  const { theme } = useContext(themeContext);
+
   return (
     <>
       <Header />
-      <div className="main ob-gyn">
+      <div className={`main ob-gyn ${theme}`}>
         <img className="main-bg" src={obGynBg} alt="ObGyn" />
 
         <h1>OB-Gyn</h1>

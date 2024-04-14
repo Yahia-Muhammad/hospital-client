@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./BreastClinic.css";
 import Header from "../../comp/header/Header";
 import Footer from "../../comp/footer/Footer";
@@ -6,12 +6,16 @@ import breastClinicBg from "../../images/breastClinicBg.png";
 import breastClinicOne from "../../images/breastClinicOne.png";
 import breastClinicTwo from "../../images/breastClinicTwo.png";
 import breastClinicThree from "../../images/breastClinicThree.png";
+import themeContext from "../../config/Theme";
+
 
 const BreastClinic = () => {
+  const { theme } = useContext(themeContext);
+
   return (
     <>
       <Header />
-      <div className="main breast-clinic">
+      <div className={`main breast-clinic ${theme}`}>
         <img className="main-bg" src={breastClinicBg} alt="Breast clinic" />
 
         <h1>Breast Clinic</h1>

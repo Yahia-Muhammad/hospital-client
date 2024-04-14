@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./About.css";
 import Header from "../../comp/header/Header";
 import Footer from "../../comp/footer/Footer";
@@ -10,12 +10,16 @@ import HandHeartSvg from "../../comp/svg/HandHeartSvg.svg";
 import LockSvg from "../../comp/svg/LockSvg.svg";
 import ShakeHandSvg from "../../comp/svg/ShakeHandSvg.svg";
 import BubblesSvg from "../../comp/svg/BubblesSvg.svg";
+import themeContext from "../../config/Theme";
+
 
 const About = () => {
+  const { theme } = useContext(themeContext);
+
   return (
     <>
       <Header />
-      <div className="main about">
+      <div className={`main about ${theme}`}>
         <img className="main-bg" src={about} alt="About" />
 
         <h1>Why choose Al Shifa Hospital?</h1>

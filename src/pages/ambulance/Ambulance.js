@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Ambulance.css";
 import Header from "../../comp/header/Header";
 import Footer from "../../comp/footer/Footer";
@@ -6,12 +6,16 @@ import ambulanceBg from "../../images/ambulanceBg.png";
 import ambulanceOne from "../../images/ambulanceOne.png";
 import ambulanceTwo from "../../images/ambulanceTwo.png";
 import ambulanceThree from "../../images/ambulanceThree.png";
+import themeContext from "../../config/Theme";
+
 
 const Ambulance = () => {
+  const { theme } = useContext(themeContext);
+
   return (
     <>
       <Header />
-      <div className="main ambulance">
+      <div className={`main ambulance ${theme}`}>
         <img className="main-bg" src={ambulanceBg} alt="Ambulance" />
 
         <h1>Ambulance</h1>

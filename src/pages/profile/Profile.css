@@ -40,18 +40,15 @@
 .visitis > section:first-of-type {
   display: flex;
   justify-content: space-between;
-  background-color: var(--mainColor);
   padding: 10px 30px;
 }
 
 .visitis > section:first-of-type p {
-  color: #fff;
 }
 
 .visitis > section:first-of-type button {
   background: none;
   border: none;
-  color: #fff;
   font-size: 27px;
 }
 

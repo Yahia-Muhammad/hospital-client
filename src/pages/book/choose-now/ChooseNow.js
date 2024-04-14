@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./ChooseNow.css";
 import Header from "../../../comp/header/Header";
 import Footer from "../../../comp/footer/Footer";
@@ -8,6 +7,8 @@ import signInBg from "../../../images/signBg.png";
 import ChooseComp from "./ChooseComp";
 import { useLocation } from "react-router-dom";
 import FiltersComp from "./FiltersComp";
+import themeContext from "../../../config/Theme";
+
 
 const ChooseNow = () => {
     const location = useLocation();
@@ -16,6 +17,8 @@ const ChooseNow = () => {
     const [route, setRoute] = useState("");
     const [selectedTitles, setSelectedTitles] = useState([]);
     const [selectedGenders, setSelectedGenders] = useState([]);
+    const { theme } = useContext(themeContext);
+
 
     /* These codes were used to control Filter */
 
@@ -58,7 +61,7 @@ const ChooseNow = () => {
     return (
         <>
             <Header />
-            <div className="main">
+            <div className={`main ${theme}`}>
                 <img className="main-bg" src={signInBg} alt="Sign In" />
 
                 <Booking

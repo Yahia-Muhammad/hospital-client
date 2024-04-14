@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import "./Home.css";
 import Header from "../../comp/header/Header";
 import Footer from "../../comp/footer/Footer";
@@ -11,15 +11,19 @@ import LampSvg from "../../comp/svg/LampSvg.svg";
 import VisionSvg from "../../comp/svg/VisionSvg.svg";
 import GoalSvg from "../../comp/svg/GoalSvg.svg";
 import BubblesSvg from "../../comp/svg/BubblesSvg.svg";
+import themeContext from "../../config/Theme";
+
 
 
 const Home = () => {
+  const { theme } = useContext(themeContext);
+
 
 
   return (
     <>
       <Header />
-      <div className="main home">
+      <div className={`main home ${theme}`}>
         <img className="main-bg" src={bgHomePage} alt="bgHomePage" />
 
         <Booking />

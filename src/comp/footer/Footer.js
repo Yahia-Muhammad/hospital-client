@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Footer.css";
 import LocationSvg from "../svg/LocationSvg.svg";
 import Logo from "../svg/Logo.svg";
@@ -7,11 +7,15 @@ import FacebookSvg from "../svg/FacebookSvg.svg";
 import WhatsappSvg from "../svg/WhatsappSvg.svg";
 import LinkedinSvg from "../svg/LinkedinSvg.svg";
 import { Link } from "react-router-dom";
+import themeContext from "../../config/Theme";
+
 
 
 const Footer = () => {
+  const { theme } = useContext(themeContext);
+
   return (
-    <footer>
+    <footer className={`${theme}`}>
       <div>
         <div>
           <img src={LocationSvg} alt="Location" />

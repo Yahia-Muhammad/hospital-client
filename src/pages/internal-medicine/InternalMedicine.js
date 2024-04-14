@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./InternalMedicine.css";
 import Header from "../../comp/header/Header";
 import Footer from "../../comp/footer/Footer";
 import internalMedicineBg from "../../images/internalMedicineBg.png";
 import internalMedicineOne from "../../images/internalMedicineOne.png";
 import internalMedicineTwo from "../../images/internalMedicineTwo.png";
+import themeContext from "../../config/Theme";
+
 
 const InternalMedicine = () => {
+  const { theme } = useContext(themeContext);
+
   return (
     <>
       <Header />
-      <div className="main internal-medicine">
+      <div className={`main internal-medicine ${theme}`}>
         <img
           className="main-bg"
           src={internalMedicineBg}

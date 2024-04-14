@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./IntensiveCare.css";
 import Header from "../../comp/header/Header";
 import Footer from "../../comp/footer/Footer";
 import IntensiveCareBg from "../../images/IntensiveCareBg.png";
 import IntensiveCareOne from "../../images/IntensiveCareOne.png";
 import IntensiveCareTwo from "../../images/IntensiveCareTwo.png";
+import themeContext from "../../config/Theme";
+
 
 const IntensiveCare = () => {
+  const { theme } = useContext(themeContext);
+
   return (
     <>
       <Header />
-      <div className="main intensive-care">
+      <div className={`main intensive-care ${theme}`}>
         <img className="main-bg" src={IntensiveCareBg} alt="Intensive care" />
 
         <h1>Intensive care</h1>

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../svg/Logo.svg";
 import HomeSvg from "../svg/HomeSvg.svg";
@@ -12,15 +12,18 @@ import PoneSvg from "../svg/PoneSvg.svg";
 import LocationSvg from "../svg/LocationSvg.svg";
 import LangSvg from "../svg/LangSvg.svg";
 import SearchSvg from "../svg/SearchSvg.svg";
+import themeContext from "../../config/Theme";
 
 const Header = () => {
   const [listState, setListState] = useState("hide-header");
+  const { theme, changeTheme } = useContext(themeContext);
+
   const handleListState = (el) => {
     setListState(el);
   };
   return (
     <>
-      <header className="pc">
+      <header className={`pc ${theme}`}>
         <div className="inside-header">
           <div style={{ margin: "7px 0" }}>
             <div className="logo">
@@ -43,10 +46,43 @@ const Header = () => {
                 <img src={LocationSvg} alt="Location" />
                 Qesm El Moqatam <br></br> 30.0033, 31.331704
               </li>
-              {/* <li>
-                <img src={LangSvg} alt="Lang" />
-                عربي
-              </li> */}
+              {/* Btn Toggle Theme */}
+
+              <div className="switch-mode">
+                <div
+                  className="btn-container"
+                  onChange={() => {
+                    changeTheme();
+                  }}
+                >
+                  <label className="switch btn-color-mode-switch">
+                    {localStorage.getItem("theme") === "light" ? (
+                      <input
+                        type="checkbox"
+                        name="color_mode"
+                        id="color_mode"
+                        defaultValue={1}
+                      />
+                    ) : (
+                      <input
+                        type="checkbox"
+                        name="color_mode"
+                        id="color_mode"
+                        defaultValue={1}
+                        defaultChecked
+                      />
+                    )}
+                    <label
+                      htmlFor="color_mode"
+                      data-on="Dark"
+                      data-off="Light"
+                      className="btn-color-mode-switch-inner click"
+                    />
+                  </label>
+                </div>
+              </div>
+
+              {/* Btn Toggle Theme */}
             </ul>
           </div>
 
