@@ -134,8 +134,11 @@ const BookNow = () => {
                 const filterBook = getRes.data.data.books.filter((el) =>
                     el.specialization === doctor.specialization &&
                     el.doctor === doctor.name &&
-                    el.attend === attend &&
-                    el.check === "Wait"
+                    el.attend.date.month === JSON.parse(attend).date.month &&
+                    el.attend.date.day === JSON.parse(attend).date.day &&
+                    el.attend.day === JSON.parse(attend).day &&
+                    el.attend.hour.start === JSON.parse(attend).hour.start &&
+                    el.attend.hour.end === JSON.parse(attend).hour.end
                 );
                 setRNumber(filterBook.length + 1);
                 handleFormDataBook(visitId, filterBook.length + 1)
