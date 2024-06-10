@@ -21,10 +21,13 @@ const BreastClinic = () => {
         <h1>Breast Clinic</h1>
 
         <div className="contents breast-clinic-content">
+
           <section className="mbbb">
+
             <div className="mbb">
               <h3>Women Health Clinic (Obstetrics & Gynecology)</h3>
             </div>
+
             <div className="mbb">
               <h3>Breast Clinic</h3>
               <p>
@@ -35,6 +38,7 @@ const BreastClinic = () => {
                 or through genes.
               </p>
             </div>
+
             <div className="mbb">
               <h3>Breast Cancer Symptoms:</h3>
               <p>Change in the size and shape of the breast</p>
@@ -45,7 +49,9 @@ const BreastClinic = () => {
                 the beginning.
               </p>
             </div>
+
           </section>
+
           <section className="mbbb">
             <img src={breastClinicOne} alt="img" />
             <img src={breastClinicTwo} alt="img" />

@@ -19,6 +19,7 @@ const BloodDiseases = () => {
 
         <h1>Blood Diseases</h1>
         <div className="contents blood-diseases-content">
+
           <section className="mbb">
             <h3>Haematology Clinic</h3>
             <p>
@@ -35,6 +36,7 @@ const BloodDiseases = () => {
               the forefront of groundbreaking medical research.
             </p>
           </section>
+
           <section className="mbb">
             <div>
               <h3>Diagnosis, treatment, and prevention of blood disorders:</h3>
@@ -48,11 +50,13 @@ const BloodDiseases = () => {
                 <li>Thrombocytopenia (Low Platelet Count).</li>
               </ul>
             </div>
+
             <div className="width49">
               <img src={BloodDiseasesOne} alt="img" />
               <img src={BloodDiseasesTwo} alt="img" />
             </div>
           </section>
+
           <section className="mbb">
             <h3>Services</h3>
             <p>
@@ -74,6 +78,7 @@ const BloodDiseases = () => {
               <li>Injections</li>
             </ul>
           </section>
+
         </div>
       </div>
       <Footer />

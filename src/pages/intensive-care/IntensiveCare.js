@@ -20,6 +20,7 @@ const IntensiveCare = () => {
         <h1>Intensive care</h1>
 
         <div className="contents intensive-care-content">
+
           <section className="mbb">
             <p>
               To Make A Difference In Your Life And The Lives Of Your Loved
@@ -43,6 +44,7 @@ const IntensiveCare = () => {
               Neurological Diseases.
             </p>
           </section>
+
           <section className="mbb">
             <h3>About urgent care (Intensive Care): </h3>
             <p>
@@ -69,7 +71,9 @@ const IntensiveCare = () => {
               emergency department immediately.
             </p>
           </section>
+
           <section className="mbb">
+
             <div className="width49">
               <h3>Instant access to expert medical care</h3>
               <p>
@@ -85,11 +89,14 @@ const IntensiveCare = () => {
                 care they need, 365 days a year, with no appointment required.
               </p>
             </div>
+
             <div className="width49">
               <img src={IntensiveCareOne} alt="img" />
               <img src={IntensiveCareTwo} alt="img" />
             </div>
+
           </section>
+
         </div>
       </div>
       <Footer />

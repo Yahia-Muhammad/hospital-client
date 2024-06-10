@@ -23,6 +23,7 @@ const Footer = () => {
             Qesm El Moqatam <br></br> 30.0033, 31.331704
           </p>
         </div>
+
         <div>
           <div className="logo">
             <div className="logo-svg">
@@ -48,6 +49,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+
         <div>
           <img src={PoneSvg} alt="Phone" />
           <p>19125</p>

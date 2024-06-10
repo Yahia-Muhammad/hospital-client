@@ -48,6 +48,7 @@ const Dermatology = () => {
               procedures.
             </p>
           </section>
+
           <section className="mbbb">
             <div className="width49">
               <div className="mb">
@@ -78,6 +79,7 @@ const Dermatology = () => {
               <img src={dermatologyTwo} alt="img" />
             </div>
           </section>
+
           <section>
             <div className="mb">
               <h3>Radio-frequency Treatment</h3>

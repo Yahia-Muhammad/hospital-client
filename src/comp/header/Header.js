@@ -173,7 +173,7 @@ const Header = () => {
         </div>
       </header>
 
-      <header className="mobile">
+      <header className={`mobile ${theme}`}>
         <div className="inside-header">
           <div>
             <div className="logo">

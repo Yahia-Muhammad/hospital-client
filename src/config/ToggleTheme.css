@@ -45,6 +45,14 @@ header.dark {
   background-color: #1b1b1bcc;
 }
 
+header.mobile.light .inside-header .dynamic-list {
+  background-color: #efefef;
+}
+
+header.mobile.dark .inside-header .dynamic-list {
+  background-color: #1b1b1b;
+}
+
 header.pc .between-li::before,
 header.pc .between-li::after,
 header.mobile .between-li::before,

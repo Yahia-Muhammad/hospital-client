@@ -29,6 +29,7 @@ const ObGyn = () => {
               maintaining high standards of patient care, providing comfort, and
               assuring the efficacy of the treatment plans.
             </p>
+
             <div>
               <h3>Services</h3>
               <p>Pregnancy follow-up; examinations, tests, and ultrasound.</p>
@@ -48,8 +49,11 @@ const ObGyn = () => {
                 </li>
               </ul>
             </div>
+
           </section>
+
           <section className="mbb">
+
             <div>
               <h3>Childbirth</h3>
               <ul className="mb lsp">
@@ -67,10 +71,12 @@ const ObGyn = () => {
                 </li>
               </ul>
             </div>
+
             <div className="ob-gyn-images width49">
               <img src={obGynOne} alt="img" />
               <img src={obGynTwo} alt="img" />
             </div>
+
           </section>
         </div>
       </div>

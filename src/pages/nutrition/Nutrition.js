@@ -20,6 +20,7 @@ const Nutrition = () => {
         <h1>Nutrition</h1>
 
         <div className="contents nutrition-content">
+
           <section className="mb">
             <div>
               <h3>Nutrition & Obesity</h3>
@@ -42,6 +43,7 @@ const Nutrition = () => {
               <img src={nutritionTwo} alt="img" />
             </div>
           </section>
+
           <section className="mb">
             <div className="mb">
               <h3>Caring for the inpatients</h3>

@@ -49,6 +49,7 @@ const Radiology = () => {
                 </li>
               </ul>
             </div>
+
             <div className="width49">
               <img src={radiologyOne} alt="img" />
               <img src={radiologyTwo} alt="img" />

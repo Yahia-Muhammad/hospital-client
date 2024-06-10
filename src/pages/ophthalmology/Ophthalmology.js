@@ -20,6 +20,7 @@ const Ophthalmology = () => {
         <h1>Ophthalmology</h1>
 
         <div className="contents ophthalmology-content">
+
           <section className="mbb">
             <p>
               We provide outstanding care to our patients with the help of our
@@ -55,7 +56,9 @@ const Ophthalmology = () => {
               services in the field of glaucoma & vitreous and retinal diseases.
             </p>
           </section>
+
           <section className="mbb">
+
             <div className="width49">
               <section className="mb">
                 <h3>Services Offered</h3>
@@ -81,11 +84,14 @@ const Ophthalmology = () => {
                 </ul>
               </section>
             </div>
+
             <div className="width49">
               <img src={ophthalmologyOne} alt="img" />
               <img src={ophthalmologyTwo} alt="img" />
             </div>
+
           </section>
+
         </div>
       </div>
       <Footer />

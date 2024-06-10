@@ -21,7 +21,9 @@ const GeneralSurgery = () => {
 
         <div className="contents general-surgery-content">
           <section className="mbbb">
+
             <h3>General Surgery</h3>
+
             <p>
               The general surgeons at Al Shifa Hospital are passionate about
               providing effective, long-term solutions to a wide variety of
@@ -33,6 +35,7 @@ const GeneralSurgery = () => {
               plans, as necessary.
             </p>
           </section>
+
           <section className="mbbb">
             <div className="general-surgery-text width49">
               <section className="mb">
@@ -65,6 +68,7 @@ const GeneralSurgery = () => {
                 </ul>
               </section>
             </div>
+
             <div className="general-surgery-images width49">
               <img src={generalSurgeryOne} alt="img" />
               <img src={generalSurgeryTwo} alt="img" />

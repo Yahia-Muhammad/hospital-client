@@ -21,6 +21,7 @@ const Ambulance = () => {
         <h1>Ambulance</h1>
 
         <div className="contents ambulance-content">
+
           <section className="mbbb">
             <div className="mb">
               <p>
@@ -50,11 +51,13 @@ const Ambulance = () => {
               </p>
             </div>
           </section>
+
           <section>
             <img src={ambulanceOne} alt="img" />
             <img src={ambulanceTwo} alt="img" />
             <img src={ambulanceThree} alt="img" />
           </section>
+
         </div>
       </div>
       <Footer />

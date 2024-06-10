@@ -24,6 +24,7 @@ const InternalMedicine = () => {
         <h1>General</h1>
 
         <div className="contents internal-medicine-content">
+
           <section className="mbbb">
             <h3>Abdomen and stomach conditions</h3>
             <p>
@@ -45,6 +46,7 @@ const InternalMedicine = () => {
               more specialist imaging, treatment or surgery if required.
             </p>
           </section>
+
           <section className="mbb">
             <div className="mbb">
               <section className="width49">
@@ -96,6 +98,7 @@ const InternalMedicine = () => {
               </p>
             </div>
           </section>
+
           <section className="mbb">
             <div className="mb">
               <h3>

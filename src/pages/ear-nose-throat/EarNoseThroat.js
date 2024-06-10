@@ -20,6 +20,7 @@ const EarNoseThroat = () => {
         <h1>Ear, Nose and Throat conditions</h1>
 
         <div className="contents ear-nose-throat-content">
+
           <section className="mbb">
             <p>
               ENT department at Al Shifa Hospital offers comprehensive care for
@@ -38,6 +39,7 @@ const EarNoseThroat = () => {
               Surgery for various Skull base Tumors/ CSF Rhinorrhea.
             </p>
           </section>
+
           <section className="mbb">
             <div>
               <p>
@@ -74,11 +76,13 @@ const EarNoseThroat = () => {
                 </ul>
               </section>
             </div>
+
             <div className="ear-nose-throat-images width49">
               <img src={earNoseThroatOne} alt="img" />
               <img src={earNoseThroatTwo} alt="img" />
             </div>
           </section>
+
           <section className="mbb">
             <div className="mbb">
               <p className="mb">
@@ -109,6 +113,7 @@ const EarNoseThroat = () => {
                 depending on the age of the patients.
               </p>
             </div>
+
             <div>
               <h3>
                 Urgent Care treatment for ear, nose and throat conditions
